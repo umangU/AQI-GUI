@@ -1,9 +1,11 @@
+#importing relevant libraries
 from tkinter import *
 import tkinter as tk
 ozone = sulfur = other = None
 ozoneAQI = sulfurAQI = otherAQI = None
 AQI = None
 
+#calculating AQI
 def calculate_AQI():
     global AQI
     global ozoneAQI
@@ -30,6 +32,7 @@ def calculate_AQI():
     except:
         pass
 
+#root window
 root = tk.Tk()
 root.title("AQI GUI")
 root.geometry("500x200+25+25")
